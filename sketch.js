@@ -37,13 +37,14 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.8});
+	packageBody = Bodies.circle(width/2 , 200 , 5 );
 	World.add(world, packageBody);
 
 
-	 bucket1 = new Bucket(317,418,5,80);
-	 bucket2 = new Bucket(369,455,100,5);
-	 bucket3 = new Bucket(417,413,5,80);
+	 bucket1 = new Bucket(590,418,15,100);
+	 bucket2 = new Bucket(369,455,450,15);
+	 bucket3 = new Bucket(150,420,15,100);
+	 fill("red");
 
 
 	
